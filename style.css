@@ -2,7 +2,253 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Oswal", sans-serif;
 }
+/*Para página navegar mais devagas*/
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: line 0.2s;
+}
+
+:root {
+    --verdeClaro: #BAD17A;
+    --claro: #CDE8D4;
+    --verdeEscuro: #657e47;
+    --cinza: rgb(94, 92, 92);
+    --font: "Oswal", sans-serif;
+    --bs-heading-font-family: var(--font);
+}
+
+/* Tirando visualmente a barra de rolagem, mas funciona do mesmo jeito 
+Esse webkit é para firefox e o scrollbar-width é para o edge*/
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: white;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
 }
+
+/*Estilizando a parte do nav-bar: */
+.nav-bar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 8px 15px -6px rgb(101, 126, 71);
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+
+.image-nav-bar {
+    padding: 0.2%;
+}
+
+.nav {
+    gap: 15px;
+    height: 100%;
+}
+
+.active {
+    background-color: var(--verdeClaro);
+    color: white;
+}
+
+.nav-item {
+    align-items: center;
+}
+
+.nav-link {
+    padding: 8px;
+    color: var(--cinza);
+}
+
+.nav-link:hover {
+    background-color: var(--verdeClaro);
+    color: white;
+}
+
+/* Estilizando a main */
+.main-index {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--claro);
+}
+
+.apresentacao {
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 35px;
+
+}
+
+.img-apresentacao {
+    width: 350px;
+}
+
+.div-apresentacao2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-apresentacao2 h1 {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    align-items: center;
+}
+
+.div-apresentacao2 p {
+    color: black;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/*Estilizando a parte "como funciona"*/
+
+.explicativo {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.explicativo-div {
+    height: 350px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explicativo-div p {
+    color: black;
+    font-family: var(--font);
+}
+
+.secao-cards {
+    width: 100%;
+    background-color: var(--verdeClaro);
+}
+
+.como {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 30px;
+    border-bottom: 3px solid var(--verdeEscuro);
+    color: black;
+    font-family: var(--font);
+    margin-bottom: 20px;
+}
+
+.div-cards {
+    display: flex;
+    padding: 35px;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.card {
+    padding: 25px;
+}
+
+.card-body {
+    align-items: center;
+}
+
+.btn-solid {
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: var(--claro);
+    color: var(--verdeEscuro);
+    font-weight: 700;
+}
+
+.btn-solid:hover {
+    transform: translateY(-5px);
+    transition: transform ease 0.2s;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+}
+
+.div-form {
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-form h2 {
+    color: black;
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--verdeEscuro);
+}
+.bt {
+    margin-top: 25px;
+    border: none;
+}
+.btn-form {
+    background-color: var(--cinza);
+    padding: 15px 20px;
+    color: var(--claro);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.btn-form:hover {
+    color: var(--verdeEscuro);
+    background-color: var(--claro);
+}
+
+.sec-rodape {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.img-rod {
+    margin-right: 25px;
+    width: 100px;
+    margin-left: 55px;
+}
+
+.text-rod {
+    border-left: 3px solid var(--verdeClaro);
+}
+
+.text-rod p {
+    color: var(--verdeEscuro);
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+footer {
+    background-color: var(--verdeClaro);
+    color: var(--cinza);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+

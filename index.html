@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Alcorta</title>
 </head>
 
 <body background-color="white">
     <nav class="nav-bar">
-        <img src="Chat-image.png" alt="" width="150px" class="image-nav-bar">
-        <ul class="nav justify-content-center lista-nav" >
+        <img src="Chat-image.png" alt="" class="image-nav-bar">
+        <ul class="nav justify-content-center lista-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Reportar problema</a>
+                <a class="nav-link " href="formulario.html">Reportar problema</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Ver problemas</a>
+                <a class="nav-link" href="dashboard.html">Ver problemas</a>
             </li>
         </ul>
     </nav>
@@ -29,20 +34,20 @@
     <main class="main-index">
         <section class="apresentacao">
             <div class="div-apresentacao1">
-                <img src="Chat-image.png" alt="" width="200px" class="img-apresentacao">
+                <img src="Chat-image.png" alt="" class="img-apresentacao">
             </div>
             <div class="div-apresentacao2">
-                <h1>Alcorta</h1>
+                <h1>Alcorta 💚 </h1>
                 <p>Ajude o seu bairro na melhoria e no desenvolvimento dele.</p>
             </div>
         </section>
 
         <section class="explicativo">
             <div class="explicativo-div">
-                <h2>COMO FUNCIONA</h2>
+                <h3 class="como">Como funciona</h3>
                 <p>Publique no Alcorta o problema que você encontrou e também veja outros que ainda não foram
                     solucionados.</p>
-                <p>Nosso objetivo é da visibilidade para o problema em questão e ele ser solucionado o mais rápido
+                <p>Nosso objetivo é dar visibilidade para o problema em questão para ele ser solucionado o mais rápido
                     possível.</p>
             </div>
         </section>
@@ -54,21 +59,21 @@
                 <div class="card-body">
                     <h4 class="card-title">23</h4>
                     <p class="card-text">Problemas em abertos</p>
-                    <a href="#" class="btn-solid theme-primary">Confira</a>
+                    <a href="#" class="btn-solid">Confira</a>
                 </div>
             </div>
             <div class="card card-translucent" style="width: 18rem;">
                 <div class="card-body">
                     <h4 class="card-title">30</h4>
-                    <p class="card-text">Solucionados</p>
-                    <a href="#" class="btn-solid theme-primary">Confira</a>
+                    <p class="card-text"> Problemas solucionados</p>
+                    <a href="#" class="btn-solid ">Confira</a>
                 </div>
             </div>
             <div class="card card-translucent" style="width: 18rem;">
                 <div class="card-body">
                     <h4 class="card-title">53</h4>
                     <p class="card-text">Denuncias</p>
-                    <a href="#" class="btn-solid theme-primary">Confira</a>
+                    <a href="#" class="btn-solid">Confira</a>
                 </div>
             </div>
         </div>
@@ -77,14 +82,16 @@
     <section class="form">
         <div class="div-form">
             <h2>Faça aqui sua denuncia</h2>
-            <button>Publique aqui</button>
+            <button class="bt"><a href="formulario.html" class="btn-form">Publique aqui</a></button>
         </div>
     </section>
 
 
     <section class="sec-rodape">
-        <div><img src="Chat-image.png" alt="" width="75px"></div>
-        <div><p>seu site de melhorias</p></div>
+        <div class="img-clas-rod"><img src="Chat-image.png" alt="" class="img-rod"></div>
+        <div class="text-rod">
+            <p>Seu site de melhorias</p>
+        </div>
     </section>
 
     <footer>&copy; Desenvolvido por Raquel Feitosa | Todos os direitos reservados.</footer>
