@@ -15,31 +15,30 @@
 
 <body>
     <div class="voltar">
-        <img src="Chat-image.png" width="75px">
-            <a href="index.html">Página inicial</a>
-        </div>
+        <img src="imgs/Chat-image.png" width="75px">
+        <a href="index.html">Página inicial</a>
+    </div>
     <div class="container">
-        <form action="dashboard.html" enctype="multipart/form-data" class="caix-form">
+        <form id="meuForm" action="dashboard.html" enctype="multipart/form-data" class="caix-form"> <!-- O enctype="multipart/form-data" é obrigatório em form que possui um campo do type=file -->
             <h2>Preencha o formulário</h2>
-            <label for="name" class="text-input">Titulo:<span color="red">*</span></label>
+            <label for="titulo" class="text-input">Titulo:<span color="red">*</span></label>
             <input type="text" id="titulo" name="name" placeholder="Titulo" required class="inputs">
 
-            <label for="description" class="text-input">Descrição:<span color="red">*</span></label>
-            <input type="text" id="description" name="descripition" placeholder="Descreva o problema..." class="inputs">
-
-            <label for="img" class="text-input">Foto do fato:<span color="red">*</span></label>
+            <label for="image" class="text-input">Foto do fato:<span color="red">*</span></label>
             <input type="file" id="image" name="img" accept="image/*" required class="inputs">
 
             <label for="local" class="text-input">Rua<span color="red">*</span></label>
-            <input type="" id="local" name="local" required class="inputs" placeholder="N° e nome da rua..">
+            <input type="text" id="local" name="local" required class="inputs" placeholder="N° e nome da rua..">
 
-            <p class="p-aviso">Preencha todos os campos obrigatórios para solucionar o problema o mais rápido possível.</p>
+            <p class="p-aviso">Preencha todos os campos obrigatórios para solucionar o problema o mais rápido possível.
+            </p>
 
-            <button type="submit" class="btn-enviar">Publicar</button>
+            <button type="submit" class="btn-enviar" onclick="cliqueiBotao()">Publicar</button>
         </form>
-        
+
     </div>
 
 </body>
+<script src="scriptForm.js"></script>
 
 </html>

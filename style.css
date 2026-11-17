@@ -4,15 +4,6 @@
     box-sizing: border-box;
     font-family: "Oswal", sans-serif;
 }
-/*Para página navegar mais devagas*/
-@view-transition {
-  navigation: auto;
-}
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: line 0.2s;
-}
-
 :root {
     --verdeClaro: #BAD17A;
     --claro: #CDE8D4;
@@ -95,6 +86,7 @@ body {
 
 .img-apresentacao {
     width: 350px;
+    border-radius: 50%;
 }
 
 .div-apresentacao2 {
