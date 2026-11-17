@@ -6,7 +6,7 @@
 A plataforma permite registrar e visualizar denúncias relacionadas a problemas no bairro, como ruas danificadas, iluminação pública, descarte irregular de lixo e outras situações que afetam o dia a dia da população.
 
 ## Prints de tela
-<img src="imgs\DesktopDenuncias.png" width="200px">
+<img src="imgs\DesktopDenuncias.png" width="500px">
 
 ## 🎯 Objetivo
 
@@ -35,6 +35,11 @@ O desenvolvimento deste projeto proporcionou conhecimentos práticos sobre desen
 ## 👩‍💻 Desenvolvimento
 
 Projeto desenvolvido como atividade acadêmica, com foco em tecnologia, cidadania e soluções digitais para problemas do cotidiano.
+
+## 🎞️ Execução
+Você pode baixar o projeto, abrir no VScode e visualizar no navegador.<br>
+Ou abrir o link disponivel para você aqui:<br>
+<a href="https://bairroemdia.vercel.app/"> 🔗 Link</a>
 
 ---
 
