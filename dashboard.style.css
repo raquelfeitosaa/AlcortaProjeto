@@ -13,15 +13,6 @@
     --bs-heading-font-family: var(--font);
 }
 
-/*Para página navegar mais devagas*/
-@view-transition {
-    navigation: auto;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-    animation-duration: line 0.2s;
-}
 
 .prin {
     background-color: var(--claro);
@@ -183,4 +174,17 @@
 
 .but-2:hover {
     box-shadow: 0 0 8px var(--cinza);
+}
+.btn-excluir {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-excluir:hover {
+    background-color: #b52b27;
 }
